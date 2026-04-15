@@ -1,4 +1,97 @@
 body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.dark-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.skills {
+    padding: 20px;
+}
+
+.skill-box {
+    display: inline-block;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    padding: 20px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: #ff7eb3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .project, .dark .skill-box {
+    background: #1e1e1e;
+}
+/* body {
     font-family: Arial;
     margin: 0;
     background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -93,4 +186,4 @@ section {
 
 .project:hover {
     transform: scale(1.05);
-}
+} */
