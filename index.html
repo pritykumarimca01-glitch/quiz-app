@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pro Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login -->
+    <div id="login">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="username" placeholder="Your Name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz" style="display:none;">
+        <h2 id="welcome"></h2>
+        <div id="timer"></div>
+        <div id="question"></div>
+
+        <button id="btn1" onclick="checkAnswer('a')"></button>
+        <button id="btn2" onclick="checkAnswer('b')"></button>
+        <button id="btn3" onclick="checkAnswer('c')"></button>
+        <button id="btn4" onclick="checkAnswer('d')"></button>
+
+        <p id="result"></p>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboard" style="display:none;">
+        <h2>Leaderboard</h2>
+        <ul id="scores"></ul>
+        <button onclick="restartQuiz()">Play Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Quiz App</h2>
+
+    <div id="timer">Time: 10</div>
+
+    <div id="question"></div>
+
+    <div class="options">
+        <button id="btn1" onclick="checkAnswer('a')"></button>
+        <button id="btn2" onclick="checkAnswer('b')"></button>
+        <button id="btn3" onclick="checkAnswer('c')"></button>
+        <button id="btn4" onclick="checkAnswer('d')"></button>
+    </div>
+
+    <p id="result"></p>
+
+    <button onclick="nextQuestion()">Next</button>
+    <button onclick="restartQuiz()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Simple Quiz App</h2>
+
+    <div id="question">Question here</div>
+
+    <div class="options">
+        <button onclick="checkAnswer('a')">A</button>
+        <button onclick="checkAnswer('b')">B</button>
+        <button onclick="checkAnswer('c')">C</button>
+        <button onclick="checkAnswer('d')">D</button>
+    </div>
+
+    <p id="result"></p>
+    <button onclick="nextQuestion()">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
